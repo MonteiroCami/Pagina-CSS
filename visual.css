@@ -1,0 +1,141 @@
+#menu {
+    /* Mantemos as propriedades estruturais que já existem */
+    /* Adicionamos estilo visual */
+    background: #854640; /* cor base mais clara da paleta */
+    border-radius: 3px; /* bordas arredondadas para parecer mais suave */
+    padding: 20px;
+    box-shadow: 3px 0 10px rgba(23, 0, 0, 0.2); /* sombra suave */
+}
+
+#menu ul {
+    list-style: none; /* remove os pontos da lista */
+    padding: 0;
+    margin-top: 20px;
+}
+
+#menu li {
+    margin: 15px 0;
+    padding: 15px;
+    background: #331210; /* segunda cor da paleta */
+    border-radius: 5px;
+    transition: all 0.3s ease; /* transição suave ao passar o mouse */
+    cursor: pointer;
+    color: white;
+}
+
+#menu li:hover {
+    background: #331210; /* escurece ao passar o mouse */
+    transform: scale(1.05); /* aumenta levemente */
+    box-shadow: 0 2px 5px rgba(23, 0, 0, 0.3);
+}
+
+#cabecalho {
+    /* Mantendo propriedades estruturais */
+    background: linear-gradient(to right, #854640, #6a3530); /* gradiente suave */
+    border-bottom: 3px double #331210; /* borda dupla, estilo clássico */
+    letter-spacing: 5px; /* espaçamento entre letras para elegância */
+    text-shadow: 2px 2px 4px rgba(23, 0, 0, 0.3); /* sombra suave no texto */
+    position: relative;
+}
+
+/* Elementos decorativos inspirados em arte clássica */
+#cabecalho::before, #cabecalho::after {
+    content: "✦✦✦✦✦"; /* símbolo decorativo */
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#cabecalho::before {
+    left: 20px;
+}
+
+#cabecalho::after {
+    right: 20px;
+}
+
+/* Texto dentro do cabeçalho */
+#cabecalho h1 {
+    font-size: 32px;
+    color: #ffffff;
+    margin: 0;
+    font-weight: normal; /* para manter a elegância */
+}
+
+#rodape {
+    width: 100%;
+    height: 50px;
+    border-top: 3px double #331210;  /* borda dupla clássica */
+    background: linear-gradient(to right, #854640, #6a3530); /* gradiente como no cabeçalho */
+    font-style: oblique;
+    font-size: 16px;
+    
+    /* Centralização e espaçamento */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    
+    /* Efeitos de texto */
+    color: #fff;
+    letter-spacing: 1.5px;
+    text-shadow: 1px 1px 2px rgba(23, 0, 0, 0.3);
+    
+    /* Detalhe decorativo */
+    position: relative;
+}
+
+/* Linha decorativa antes do texto */
+#rodape::before, #rodape::after {
+    content: "——";
+    color: #170000;
+    margin: 0 15px;
+    opacity: 0.7;
+}
+
+
+
+/*estilização do conteúdo*/
+
+.container-principal {
+    display: flex;
+    flex: 1;   /*isso faz ocupar todo espaço disponível entre cabeçalho e rodapé */  
+}
+
+.container {
+    .container {
+        display: flex;
+        width: 100%;
+        border: 2px solid red; /* Temporário para debug */
+    }
+}
+
+#conteudo {
+    padding: 20px;
+    background: linear-gradient(to bottom, #000000 0%, #2e1210 100%);
+}
+
+.galeria {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 0px;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap; /* Permite que as imagens quebrem para a próxima linha se necessário */
+}
+
+.galeria img {
+    width:900px;          /* Largura fixa */
+    height: 400px;         /* Altura fixa */
+    object-fit: cover;     /* Mantém proporção da imagem */
+    border-radius: 2px;    /* Borda arredondada opcional */
+}
+
+.texto-galeria{
+    color: #fff;
+}
+
+#conteudo h2{
+    color: #ffffff;
+}

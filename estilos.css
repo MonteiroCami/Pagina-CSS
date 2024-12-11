@@ -1,0 +1,56 @@
+html, body {
+    min-height: 100vh; /* isso força o body a ter pelo menos a altura da viewport */
+}
+
+body {
+    display: flex;  /* usando flexbox para melhor controle do layout */
+    flex-direction: column; /* organiza os elementos em coluna */
+    font-size: 20px;
+    text-align: center;
+}
+
+
+#cabecalho {
+    width: 100%;
+    height: 100px;
+    border: 1px solid black;
+    background: #CDCDC1;
+    display: flex;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    justify-content: center; /* centraliza horizontalmente */
+    align-items: center;    /* centraliza verticalmente */
+}
+
+/* container para menu e conteúdo */
+.container {
+    display: flex;
+    /*flex: 1; /* isso faz o container crescer e ocupar o espaço disponível */
+}
+
+#menu {
+    width: 200px;
+    border: 1px solid #854640;;
+    /*background: #8b8b83;*/
+    color: white;
+    font-style:oblique;
+}
+
+#conteudo {
+    flex: 1; /* faz o conteúdo ocupar o espaço restante */
+    width: 100%;                 /* Largura 100% da página */
+    min-height: 300px;           /* Tamanho mínimo 300 píxels */
+    border: 1px solid black;     /* Borda */
+    /*background: white;           /* Cor de fundo do menu */
+}
+
+#rodape {
+    width: 100%;                 /* Largura 100% da página */
+    height: 50px;                /* Altura do rodapé */
+    border: 1px solid black;     /* Borda */
+    background: #CDCDC1;         /* Cor de fundo do menu */
+}
+
+.borda {
+    border: 4px solid blue;
+}
